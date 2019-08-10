@@ -7,5 +7,54 @@
 
 <body>
 <main>臭🐠烂🥚网站因本人🖥损坏无力回天暂停维护</main>
+<br>倒计时已结束<br>
+
+<span id="span_dt_dt" style='border:1px solid black;background-color:#FFFFFF' ></span>
+
+<SCRIPT language=javascript>
+
+<!--
+
+//document.write("");
+
+function show_time(){
+
+window.setTimeout("show_time()", 1000);
+
+BirthDay=new Date("06-07-2020");//改成你的计时日期
+
+today=new Date();
+
+timeold=(BirthDay.getTime()-today.getTime());
+
+sectimeold=timeold/1000
+
+secondsold=Math.floor(sectimeold);
+
+msPerDay=24*60*60*1000
+
+e_daysold=timeold/msPerDay
+
+daysold=Math.floor(e_daysold);
+
+e_hrsold=(e_daysold-daysold)*24;
+
+hrsold=Math.floor(e_hrsold);
+
+e_minsold=(e_hrsold-hrsold)*60;
+
+minsold=Math.floor((e_hrsold-hrsold)*60);
+
+seconds=Math.floor((e_minsold-minsold)*60);
+
+span_dt_dt.innerHTML=daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒" ;
+
+}
+
+show_time();
+
+//-->
+
+</SCRIPT>
 </body>
 </html>
